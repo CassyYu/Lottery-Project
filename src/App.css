@@ -1,38 +1,169 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  display: flex;
+  flex: 0;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lottery * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 字体相关 */
+.lottery h1 {
+  margin: 20px 0;
+  color: #e1ecfd;
 }
+.lottery h2 {
+  margin: 10px 0;
+  color: #e1ecfd;
+}
+.lottery .awards-box p {
+  color: #df742c;
+  font-size: 14px;
+}
+.lottery .lottery-btn p:nth-child(1) {
+  font-weight: bolder;
+  font-size: 18px;
+}
+.lottery .results-box p {
+  color: #e1ecfd;
+  margin: 10px 0;
+}
+.lottery .info-box h2 {
+  color: #3b3d3f;
+  font-size: 18px;
+}
+.lottery .info-box .main p:nth-child(1) {
+  color: #df742c;
+}
+.lottery .info-box button {
+  color: #e1ecfd;
+  font-size: 14px;
+}
+/* 结束字体相关 */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lottery {
+  padding: 20px 50px;
+  background-color: #3f65ef;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: left;
 }
 
-.App-link {
-  color: #61dafb;
+.lottery main {
+  margin: 20px 0;
+  background-color: #f4dc97;
+  border-radius: 5px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* info-box 相关 */
+.lottery .info-box {
+  width: 330px;
+  height: 240px;
+  top: 35px;
+  left: 37px;
+  position: absolute;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #aaa;
+}
+.lottery .info-box .header {
+  border-bottom: 1px solid #eee;
+}
+.lottery .info-box .main>p {
+  margin-bottom: 10px;
+}
+.lottery .info-box button {
+  height: 35px;
+  width: 120px;
+  margin: 20px 0;
+  position: relative;
+  background-color: #3a7af6;
+  border: 2px solid #888;
+  border-radius: 50vh;
+}
+/* 结束 info-box 相关*/
+
+/* 以下均为 awards-box 相关 */
+.lottery .awards-box {
+  width: 360px;
+  height: 270px;
+  margin: 15px;
+  background-color: #df742c;
+  border: 7px solid #df742c;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+}
+.lottery .awards-box img {
+  height: 35px;
+  width: auto;
+}
+.lottery .awards-box button {
+  flex-shrink: 0;
+  width: 120px;
+  height: 90px;
+  background-color: #fcf2f4;
+  border: 4px solid #df742c;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.lottery .award-btn3 {
+  position: absolute;
+  top: 90px;
+  left: 240px;
+}
+.lottery .award-btn4 {
+  position: absolute;
+  top: 90px;
+  left: 120px;
+}
+.lottery .award-btn5 {
+  position: absolute;
+  top: 180px;
+  left: 240px;
+}
+.lottery .award-btn6 {
+  position: absolute;
+  top: 180px;
+  left: 120px;
+}
+.lottery .award-btn7 {
+  position: absolute;
+  top: 180px;
+  left: 0;
+}
+.lottery .award-btn8 {
+  position: absolute;
+  top: 90px;
+  left: 0
+}
+.lottery .lottery-btn {
+  position: absolute;
+  top: 90px;
+  left: 120px;
+  padding: 5px;
+  background-color: #fbe4ab !important;
+}
+
+.lottery .active-btn {
+  background-color: #f7c38b !important;
 }
