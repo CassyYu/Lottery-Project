@@ -38,7 +38,8 @@ export default function Lottery() {
 
   const handleClick = () => {
     if (currentStones < stones.spend) {
-      alert("矿石不足");
+      setAward({ infoTitle: '矿石不足', infoContent: '' });
+      setAlert(true);
       return;
     }
     if (timerId !== -1) return;
@@ -77,27 +78,41 @@ export default function Lottery() {
 
   if (awards.length) {
     return (
-      <div className="lottery">
-        <header>
-          <h1>幸运抽奖</h1>
-          <h2>当前矿石数：{currentStones === -1 ? stones.init : currentStones}</h2>
-        </header>
-        <main>
-          <div className="awards-box">
-            <AwardList items={awards} currentIndex={currentIndex}></AwardList>
-            <button className="lottery-btn" onClick={handleClick}>
-              <p>抽奖</p>
-              <p>{stones.spend}矿石/次</p>
-            </button>
+      <div className="lottery-box">
+        <div className="lottery">
+          <img alt="" src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/background.f2441ca.png"></img>
+          <div className="header">
+            <img alt="" src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/title.b704296.png"></img>
+            <p className="words">Switch、乐高积木及掘金周边等你来拿</p>
           </div>
-          <InfoBox award={award} alert={alert} setAlert={setAlert}></InfoBox>
-        </main>
-        <footer>
-          <div className="results-box">
-            <h2>中奖列表</h2>
-            <ResultList items={result}></ResultList>
+          <div className="main">
+            <p className="title">幸运抽奖</p>
+            <div className="box">
+              <div className="left-box">
+                <div className="header">
+                  <p className="value">当前矿石数：<span style={{ color: '#fadd95' }}>{currentStones === -1 ? stones.init : currentStones}</span></p>
+                  <p className="signin">已签到</p>
+                </div>
+                <div className="awards-box">
+                  <div className="container">
+                    <AwardList items={awards} currentIndex={currentIndex}></AwardList>
+                    <button id="lottery-btn" onClick={handleClick}>
+                      <p>抽奖</p>
+                      <p>{stones.spend}矿石/次</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="right-box">
+                <p>中奖列表</p>
+                <div className="results-box">
+                  <ResultList items={result}></ResultList>
+                </div>
+              </div>
+              <InfoBox award={award} alert={alert} setAlert={setAlert}></InfoBox>
+            </div>
           </div>
-        </footer>
+        </div>
       </div>
     )
   } else {

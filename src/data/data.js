@@ -1,12 +1,3 @@
-import award1 from '../img/award1.jpeg';
-import award2 from '../img/award2.jpeg';
-import award3 from '../img/award3.jpeg';
-import award4 from '../img/award4.jpeg';
-import award5 from '../img/award5.jpeg';
-import award6 from '../img/award6.jpeg';
-import award7 from '../img/award7.jpeg';
-import award8 from '../img/award8.jpeg';
-
 export const data = [
   {
     stones: {
@@ -18,28 +9,28 @@ export const data = [
     awards: [
       {
         name: '66矿石',
-        img: award1,
+        img: "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/32ed6a7619934144882d841761b63d3c~tplv-k3u1fbpfcp-no-mark:0:0:0:0.awebp",
         chance: 100,
         infoTitle: '恭喜你中奖啦',
         infoContent: '获得奖品66矿石'
       },
       {
         name: '随机限量徽章',
-        img: award2,
+        img: "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/71c68de6368548bd9bd6c8888542f911~tplv-k3u1fbpfcp-no-mark:0:0:0:0.awebp",
         chance: 100,
         infoTitle: '！！！恭喜你中奖啦！！！',
         infoContent: '获得奖品随机限量徽章，请联系管理员兑换'
       },
       {
         name: '掘金新款T恤',
-        img: award3,
+        img: "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5bf91038a6384fc3927dee294a38006b~tplv-k3u1fbpfcp-no-mark:0:0:0:0.awebp",
         chance: 100,
         infoTitle: '！！！恭喜你中奖啦！！！',
         infoContent: '获得奖品掘金新款T恤，请联系管理员兑换'
       },
       {
         name: '乐高海洋巨轮',
-        img: award4,
+        img: "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aabe49b0d5c741fa8d92ff94cd17cb90~tplv-k3u1fbpfcp-no-mark:0:0:0:0.awebp",
         chance: 10,
         infoTitle: '！！！恭喜你中大奖啦！！！',
         infoContent: '获得奖品乐高海洋巨轮，请联系管理员兑换'
@@ -53,28 +44,28 @@ export const data = [
       },
       {
         name: 'Switch',
-        img: award5,
+        img: "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4decbd721b2b48098a1ecf879cfca677~tplv-k3u1fbpfcp-no-mark:0:0:0:0.awebp",
         chance: 1,
         infoTitle: '！！！恭喜你中大奖啦！！！',
         infoContent: '获得奖品Switch，请联系管理员兑换'
       },
       {
         name: 'Yoyo抱枕',
-        img: award6,
+        img: "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/33f4d465a6a9462f9b1b19b3104c8f91~tplv-k3u1fbpfcp-no-mark:0:0:0:0.awebp",
         chance: 100,
         infoTitle: '！！！恭喜你中奖啦！！！',
         infoContent: '获得奖品Yoyo抱枕，请联系管理员兑换'
       },
       {
-        name: '掘金限量桌垫',
-        img: award7,
+        name: '掘金马克杯',
+        img: "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab31c183950541d4a0731c0b8765b173~tplv-k3u1fbpfcp-no-mark:0:0:0:0.awebp",
         chance: 100,
         infoTitle: '！！！恭喜你中奖啦！！！',
-        infoContent: '获得奖品掘金限量桌垫，请联系管理员兑换'
+        infoContent: '获得奖品掘金马克杯，请联系管理员兑换'
       },
       {
         name: 'Bug',
-        img: award8,
+        img: "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0a4ce25d48b8405cbf5444b6195928d4~tplv-k3u1fbpfcp-no-mark:0:0:0:0.awebp",
         chance: 100,
         infoTitle: '很遗憾没有中奖',
         infoContent: ''
