@@ -3,12 +3,15 @@ export default function InfoBox(props) {
   if (alert) return (
     <div className="info-box">
       <div className="header">
-        <h2>友情提示</h2>
+        <span>{award.title}</span>
       </div>
       <div className="main">
-        <p>{award.infoTitle}</p>
-        <p>{award.infoContent}</p>
-        <button onClick={() => { setAlert(false) }}>我知道了</button>
+        <div className="box">
+          <img alt="award-img" src={award.img}></img>
+          <p className="title">{award.content}</p>
+          <p className="content">{award.desc}</p>
+          <button onClick={() => { setAlert(false) }}>我知道了</button>
+        </div>
       </div>
     </div>
   )
