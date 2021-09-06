@@ -38,7 +38,7 @@ body {
 
 .lottery {
   min-height: calc(100vh - 108px);
-  left: max(calc(50% - 473px), 0px);
+  margin: 0 auto;
   position: relative;
   z-index: 1;
   width: 946px;
